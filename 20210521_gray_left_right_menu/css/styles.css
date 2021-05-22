@@ -1,0 +1,101 @@
+html {
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: rgb(39, 39, 39);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.external-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24em;
+  background-color: rgb(66, 66, 66);
+  border-radius: 2em;
+  box-shadow: 0.1em 0.1em 1em 0.5em rgba(10, 10, 10, 0.616);
+}
+
+.internal-div {
+  width: 100%;
+  font-family: Poppins, sans-serif;
+  color: gray;
+}
+
+.left-div {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.5em;
+  margin-inline-start: -1em;
+}
+
+.right-div {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  padding-left: 0.5em;
+  margin-inline-end: -1em;
+}
+
+.vline-div {
+  background-color: gray;
+  border-inline: 1px solid gray;
+  height: 5em;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding-inline: 0.4em;
+  width: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.left-li {
+  text-decoration: none;
+  margin-left: auto;
+  text-align: right;
+}
+
+.right-li {
+  margin-right: auto;
+  text-align: left;
+}
+
+li a {
+  color: gray;
+  text-decoration: none;
+}
+
+li {
+  text-align: right;
+  border-radius: 2em;
+  padding-inline: 0.6em;
+  transition: 0.1s;
+  max-width: 85%;
+}
+
+li:hover{
+  background-color: gray;
+  color: rgb(66, 66, 66);
+  transition: 0.25s;
+}
+
+li:hover a{
+  color: rgb(66, 66, 66);
+  cursor: pointer;
+}
