@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+
+:root {
+  --col1: #f0e3ca;
+  --col2: #ff8303;
+  --col3: #a15c17;
+  --col4: #1b1a17;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  margin: 0;
+  background-color: var(--col1);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--col2);
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.navbar li {
+  float: left;
+  font-family: Noto sans, sans-serif;
+  font-size: 1.5em;
+}
+
+.navbar li a {
+  display: block;
+  color: var(--col1);
+  text-align: center;
+  padding: 0.7em 2em;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.navbar li a:hover {
+  background-color: var(--col3);
+  box-shadow: inset 0 0 1em 0.1em rgba(0, 0, 0, 0.274);
+  transition: 0.1s;
+}
+
+.parent {
+  margin-top: 5em;
+  text-align: center;
+}
+.child {
+  margin: 1em;
+  display: inline-block;
+  background-color: var(--col4);
+  width: 32em;
+  height: 19.78em; /* rettangolo aureo */
+  box-shadow: 0 0 1em #000000a9;
+}
+
+.child h1 {
+  text-align: left;
+  padding-top: .6em;
+  padding-inline: .8em;
+  font-family: Noto sans, sans-serif;
+  margin: auto;
+  color: var(--col1)
+}
+
+.child p {
+  text-align: left;
+  font-family: Noto sans, sans-serif;
+  font-size: 1.4em;
+  padding-inline: .8em;
+  color: var(--col1)
+}
