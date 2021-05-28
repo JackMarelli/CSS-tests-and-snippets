@@ -25,16 +25,14 @@ body {
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: left;
+  z-index: 100;
+  background-color: var(--col2);
 }
 
 .navbar ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  background-color: var(--col2);
-  position: sticky;
-  top: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -45,10 +43,8 @@ body {
 }
 
 .navbar li a {
-  display: block;
   color: var(--col1);
   text-align: center;
-  padding: 0.7em 2em;
   text-decoration: none;
   transition: 0.1s;
 }
@@ -59,32 +55,48 @@ body {
   transition: 0.1s;
 }
 
+.right-li {
+  float: right;
+}
+
 .parent {
   margin-top: 5em;
   text-align: center;
 }
+
 .child {
   margin: 1em;
   display: inline-block;
+  vertical-align: middle;
   background-color: var(--col4);
-  width: 32em;
-  height: 19.78em; /* rettangolo aureo */
+  width: 20rem;
+  height: 12.3rem; /* rettangolo aureo */
   box-shadow: 0 0 1em #000000a9;
+  overflow: scroll;
 }
 
 .child h1 {
   text-align: left;
-  padding-top: .6em;
+  padding-block: .3em;
   padding-inline: .8em;
   font-family: Noto sans, sans-serif;
+  font-size: 1.4rem;
   margin: auto;
-  color: var(--col1)
+  color: var(--col1);
+  position: sticky;
+  top: 0;
+  background-color: #0e0d0b;
+  box-shadow: 0 0 1em .8em #1b1a17;
 }
 
 .child p {
   text-align: left;
   font-family: Noto sans, sans-serif;
-  font-size: 1.4em;
+  font-size: 1rem;
   padding-inline: .8em;
-  color: var(--col1)
+  color: var(--col1);
+}
+
+.testo {
+  padding: .5em;
 }
