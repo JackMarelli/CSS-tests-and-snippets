@@ -4,7 +4,7 @@
 :root {
   --col1: #f0e3ca;
   --col2: #ff8303;
-  --col3: #a15c17;
+  --col3: #0e0d0b;
   --col4: #1b1a17;
 }
 
@@ -27,6 +27,7 @@ body {
   display: flex;
   z-index: 100;
   background-color: var(--col2);
+  box-shadow: 0 0 1em 0.1em #0e0d0b70;
 }
 
 .navbar ul {
@@ -34,6 +35,12 @@ body {
   margin: 0;
   padding: 1rem;
   width: 100%;
+  padding-block: 0.4em;
+  float: left;
+}
+
+.navbar ul:first-child {
+  padding-left: 0;
 }
 
 .navbar li {
@@ -43,15 +50,15 @@ body {
 }
 
 .navbar li a {
-  color: var(--col1);
   text-align: center;
   text-decoration: none;
   transition: 0.1s;
+  color: var(--col1);
+  padding: 0.8em;
 }
 
 .navbar li a:hover {
-  background-color: var(--col3);
-  box-shadow: inset 0 0 1em 0.1em rgba(0, 0, 0, 0.274);
+  color: var(--col4);
   transition: 0.1s;
 }
 
@@ -59,12 +66,12 @@ body {
   float: right;
 }
 
-.parent {
+.container {
   margin-top: 5em;
   text-align: center;
 }
 
-.child {
+.postit {
   margin: 1em;
   display: inline-block;
   vertical-align: middle;
@@ -75,28 +82,28 @@ body {
   overflow: scroll;
 }
 
-.child h1 {
+.postit h1 {
   text-align: left;
-  padding-block: .3em;
-  padding-inline: .8em;
+  padding-block: 0.3em;
+  padding-inline: 0.8em;
   font-family: Noto sans, sans-serif;
   font-size: 1.4rem;
   margin: auto;
   color: var(--col1);
   position: sticky;
   top: 0;
-  background-color: #0e0d0b;
-  box-shadow: 0 0 1em .8em #1b1a17;
+  background-color: var(--col3);
+  box-shadow: 0 0 1em 0.8em var(--col3);
 }
 
-.child p {
+.postit p {
   text-align: left;
   font-family: Noto sans, sans-serif;
   font-size: 1rem;
-  padding-inline: .8em;
+  padding-inline: 0.8em;
   color: var(--col1);
 }
 
 .testo {
-  padding: .5em;
+  padding: 0.5em;
 }
