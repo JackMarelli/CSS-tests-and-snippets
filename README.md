@@ -1,2 +1,2 @@
 # CSS-tests-and-snippets
-Here you will find all of my random css tests.
+Here you will find all of my random css tests and snippets.
