@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  width: 200px;
+  height: 300px;
+  border: 1px solid lightgray;
+  background-image: linear-gradient(
+    to bottom,
+    red 25%,
+    orange 25% 50%,
+    yellow 50% 75%,
+    green 75%
+  );
+}
