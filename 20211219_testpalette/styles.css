@@ -1,0 +1,61 @@
+:root {
+  --col-1: #2e2c2f;
+  --col-2: #475b63;
+  --col-3: #729b79;
+  --col-4: #bacdb0;
+  --col-5: #f3e8ee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: fit-content;
+  padding: 30px;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-col {
+  flex-flow: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.btn {
+  height: 80px;
+  width: 600px;
+  margin: 10px 0;
+}
+
+.bg-col-1 {
+  background-color: var(--col-1);
+}
+.bg-col-2 {
+  background-color: var(--col-2);
+}
+.bg-col-3 {
+  background-color: var(--col-3);
+}
+.bg-col-4 {
+  background-color: var(--col-4);
+}
+.bg-col-5 {
+  background-color: var(--col-5);
+}
+
+.test-border {
+    border-radius: 1px solid white;
+}
