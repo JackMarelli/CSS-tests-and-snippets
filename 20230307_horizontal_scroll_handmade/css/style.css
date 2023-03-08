@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
 
 :root {
-  --bg-color: #ffffe0;
+  --bg-color: #F2EDD7;
+  --text-color: #755139;
 }
 
 * {
@@ -10,7 +11,8 @@
   padding: 0;
   box-sizing: border-box;
 
-  scroll-behavior: smooth;
+  color: var(--text-color);
+
 }
 
 ::-webkit-scrollbar {
