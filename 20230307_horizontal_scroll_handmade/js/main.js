@@ -1,4 +1,5 @@
 const scroller = document.querySelector("#scroller");
+const cursorDiv = document.querySelector("#cursorDiv");
 let sx = 0;
 let dx = sx;
 
@@ -9,7 +10,6 @@ window.addEventListener("wheel", (e) => {
   } else if (sx <= 0) {
     sx = 0;
   }
-  console.log(sx);
 });
 
 window.requestAnimationFrame(render);
@@ -25,6 +25,7 @@ function render() {
   }
   
   console.log(dx)
+  console.log();
   scroller.scrollLeft = dx;
   window.requestAnimationFrame(render);
 }
@@ -32,3 +33,8 @@ function render() {
 function li(a, b, n) {
   return (1 - n) * a + n * b;
 }
+
+window.addEventListener("mousemove", (e) => {
+  cursorDiv.style.top = `${e.clientY - cursorDiv.offsetWidth/2}`;
+  cursorDiv.style.left = `${e.clientX - cursorDiv.offsetHeight/2}`;
+});
