@@ -12,15 +12,11 @@
   box-sizing: border-box;
 
   color: var(--text-color);
-  cursor: none;
+  cursor: none
 }
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-a {
-  cursor: none;
 }
 
 body {
@@ -30,7 +26,7 @@ body {
 
 .title {
   font-family: "Climate Crisis";
-  font-size: min(calc(100vw / 10), 4em);
+  font-size: min(calc(100vw / 15), 4em);
   margin: 4vh 5vw;
 }
 
@@ -65,10 +61,18 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
 
-  width: 50px;
-  height: 50px;
+.cursorDefault {
+  width: 20px;
+  height: 20px;
   border-radius: 100%;
   background-color: #008b8b;
-  z-index: 100;
+}
+
+.cursorCta {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #cf2121c0;
 }
