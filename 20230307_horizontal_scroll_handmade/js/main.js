@@ -44,12 +44,14 @@ window.onload = () => {
   cursorDiv.classList.add("cursorDefault");
 }
 
+/*
 window.addEventListener("mousemove", (e) => {
   cursorDiv.style.top = `${e.clientY - cursorDiv.offsetWidth / 2}`;
   cursorDiv.style.left = `${e.clientX - cursorDiv.offsetHeight / 2}`;
-});
+});*/
 
 for (let i = 0; i < scrollerElements.length; i++) {
+  console.log("event listeners added")
   scrollerElements[i].addEventListener("mouseenter", (e) => {
     console.log("fired " + e.type);
     cursorDiv.classList.add("cursorCta");
