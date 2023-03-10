@@ -6,6 +6,7 @@ let sx = 0;
 let dx = sx;
 
 window.addEventListener("wheel", (e) => {
+  moveCursor(e);
   if (sx > scroller.scrollWidth) {
     sx = scroller.scrollWidth;
   } else if (sx < 0) {
@@ -37,9 +38,7 @@ window.onload = () => {
 }
 
 window.addEventListener("mousemove", (e) => {
-  cursorDiv.style.top = `${e.clientY - cursorDiv.offsetWidth / 2}`;
-  cursorDiv.style.left = `${e.clientX - cursorDiv.offsetHeight / 2}`;
-});
+moveCursor(e)});
 
 for (let i = 0; i < scrollerElements.length; i++) {
   console.log("event listeners added")
@@ -53,4 +52,9 @@ for (let i = 0; i < scrollerElements.length; i++) {
     cursorDiv.classList.add("cursorDefault");
     cursorDiv.classList.remove("cursorCta");
   });
+}
+
+function moveCursor(e) {
+  cursorDiv.style.top = `${e.clientY - cursorDiv.offsetWidth / 2}`;
+  cursorDiv.style.left = `${e.clientX - cursorDiv.offsetHeight / 2}`;
 }

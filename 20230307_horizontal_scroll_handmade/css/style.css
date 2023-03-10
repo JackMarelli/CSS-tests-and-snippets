@@ -19,7 +19,10 @@
   letter-spacing: -1px;
   word-spacing: 1px;
   text-decoration: none;
+  cursor: none;
 }
+
+::
 
 ::selection {
   background-color: var(--primary-color);
@@ -114,6 +117,9 @@ body {
   top: 0;
   left: 0;
   pointer-events: none;
+
+  transition: width .2s ease-out,
+              height .2s ease-out;
 }
 
 .cursorDefault {
@@ -124,10 +130,24 @@ body {
 }
 
 .cursorCta {
-  width: 60px;
-  height: 60px;
+  width: 12vh;
+  height: 12vh;
   border-radius: 100%;
   background-color: #cf2121c0;
+  position: relative;
+}
+
+.cursorCta::after {
+  content: 'Explore';
+  font-family: var(--general-font);
+  color: var(--bg-color);
+  font-size: 1em;
+
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .m-5vw-x {
