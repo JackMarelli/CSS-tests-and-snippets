@@ -22,8 +22,6 @@
   cursor: none;
 }
 
-::
-
 ::selection {
   background-color: var(--primary-color);
   color: var(--bg-color);
